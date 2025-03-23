@@ -22,35 +22,6 @@
     </style>
   </head>
   <body class="font-acumin bg-[#F7F6F6]">
-    <!-- header start -->
-    <!-- <header class="header sticky top-0 z-50 bg-white shadow-md">
-      <div class="flex items-center justify-center px-6 py-4">
-        <ul class="flex items-center justify-between space-x-8">
-          <li>
-            <a href="#" class="font-medium uppercase hover:text-gray-600"
-              >AngebotE</a
-            >
-          </li>
-          <li>
-            <a href="#" class="font-medium uppercase hover:text-gray-600"
-              >Reedereien</a
-            >
-          </li>
-          <li>
-            <a href="#" class="font-medium uppercase hover:text-gray-600"
-              >Über Uns</a
-            >
-          </li>
-          <li>
-            <a href="#" class="font-medium uppercase hover:text-gray-600"
-              >Kontakt</a
-            >
-          </li>
-        </ul>
-      </div>
-    </header> -->
-
-    <!-- header end -->
     <!-- main start -->
     <main>
       <!-- hero start -->
@@ -151,27 +122,25 @@
           />
         </div>
 
-        <!-- Title (Parallax Effect) -->
+        <!-- Title -->
         <div
-          class="relative w-full flex flex-col items-center justify-center z-10 xl:-top-24 2xl:-top-36"
+          class="relative w-full flex flex-col items-center justify-center z-10"
         >
           <h1
             id="parallaxText"
-            class="uppercase text-4xl md:text-6xl lg:text-7xl xl:text-8xl 2xl:text-[150px] font-normal text-center text-white"
+            class="uppercase text-5xl md:text-7xl lg:text-7xl xl:text-8xl 2xl:text-[150px] font-normal text-center text-white -mt-28 lg:-mt-48 xl:-mt-64"
           >
             Polar Dreams
           </h1>
         </div>
 
-        <!-- Foreground Image -->
-        <div
-          class="absolute bottom-0 lg:-bottom-10 xl:-bottom-10 w-full z-20 foreground-image hidden xl:block"
-        >
+        <!-- Foreground Image (Fixed Alignment) -->
+        <div class="absolute inset-0 w-full h-full foreground-image z-20">
           <img
             id="fgImage"
             src="./img/hero-image-tip.webp"
             alt="foreground"
-            class="w-full object-center object-cover"
+            class="w-full h-full object-cover"
           />
         </div>
       </section>
@@ -404,9 +373,7 @@
       <!-- trips end -->
       <!-- adventure start -->
       <section class="py-10 lg:py-20 px-4" id="adventure">
-        <div
-          class="w-full lg:max-w-[1200px] mx-auto  bg-white py-20 shadow-lg"
-        >
+        <div class="w-full lg:max-w-[1200px] mx-auto bg-white py-20 shadow-lg">
           <div
             class="max-w-[432px] mx-auto flex justify-center items-center flex-col text-center"
           >
@@ -852,9 +819,7 @@
       <!-- impressions end -->
       <!-- consultation start -->
       <section class="py-10 lg:py-20 px-4" id="consultation">
-        <div
-          class="w-full lg:max-w-[1200px] mx-auto bg-white py-20 shadow-lg"
-        >
+        <div class="w-full lg:max-w-[1200px] mx-auto bg-white py-20 shadow-lg">
           <div
             class="max-w-[432px] mx-auto flex justify-center items-center flex-col text-center"
           >
@@ -955,12 +920,8 @@
         const text = document.getElementById("parallaxText");
         let scrollY = window.scrollY;
 
-        // Apply parallax only for screens 1440px and above
-        if (window.innerWidth >= 1180) {
-          text.style.transform = `translateY(${scrollY * 0.3}px)`;
-        } else {
-          text.style.transform = "translateY(0)"; // Reset position for smaller screens
-        }
+        // Apply parallax effect to all screens
+        text.style.transform = `translateY(${scrollY * 0.3}px)`;
       });
 
       // Smooth scrolling
@@ -1023,29 +984,6 @@
       });
 
       // snap
-      document.addEventListener("DOMContentLoaded", function () {
-        function adjustForegroundPosition() {
-          const bgImage = document.getElementById("bgImage");
-          const fgImage = document.getElementById("fgImage");
-          const parallaxText = document.getElementById("parallaxText");
-
-          if (bgImage && fgImage && parallaxText) {
-            const bgRect = bgImage.getBoundingClientRect();
-            fgImage.style.bottom = `-${bgRect.height * 0.05}px`; // Adjust foreground position dynamically
-
-            // Adjust font size dynamically for 1180px screens
-            if (window.innerWidth <= 1180) {
-              parallaxText.style.fontSize = "4rem";
-            } else {
-              parallaxText.style.fontSize = ""; // Reset for larger screens
-            }
-          }
-        }
-
-        // Run on page load & window resize
-        window.addEventListener("resize", adjustForegroundPosition);
-        adjustForegroundPosition();
-      });
     </script>
   </body>
 </html>
