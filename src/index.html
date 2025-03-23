@@ -1005,6 +1005,7 @@
       const menuBtn = document.getElementById("menu-btn");
       const mobileMenu = document.getElementById("mobile-menu");
       const closeMenu = document.getElementById("close-menu");
+      const navLinks = mobileMenu.querySelectorAll("a"); // Select all links inside mobile menu
 
       menuBtn.addEventListener("click", () => {
         mobileMenu.classList.remove("hidden");
@@ -1013,6 +1014,14 @@
       closeMenu.addEventListener("click", () => {
         mobileMenu.classList.add("hidden");
       });
+
+      // Close menu when clicking a nav link
+      navLinks.forEach((link) => {
+        link.addEventListener("click", () => {
+          mobileMenu.classList.add("hidden");
+        });
+      });
+
       // snap
       document.addEventListener("DOMContentLoaded", function () {
         function adjustForegroundPosition() {
