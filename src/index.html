@@ -1,0 +1,1042 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- Fancybox CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/style.min.css" />
+    <link rel="stylesheet" href="./fonts/fonts.css" />
+    <style>
+      .font-acumin {
+        font-family: "Acumin Pro";
+      }
+    </style>
+  </head>
+  <body class="font-acumin bg-[#F7F6F6]">
+    <!-- header start -->
+    <!-- <header class="header sticky top-0 z-50 bg-white shadow-md">
+      <div class="flex items-center justify-center px-6 py-4">
+        <ul class="flex items-center justify-between space-x-8">
+          <li>
+            <a href="#" class="font-medium uppercase hover:text-gray-600"
+              >AngebotE</a
+            >
+          </li>
+          <li>
+            <a href="#" class="font-medium uppercase hover:text-gray-600"
+              >Reedereien</a
+            >
+          </li>
+          <li>
+            <a href="#" class="font-medium uppercase hover:text-gray-600"
+              >Über Uns</a
+            >
+          </li>
+          <li>
+            <a href="#" class="font-medium uppercase hover:text-gray-600"
+              >Kontakt</a
+            >
+          </li>
+        </ul>
+      </div>
+    </header> -->
+
+    <!-- header end -->
+    <!-- main start -->
+    <main>
+      <!-- hero start -->
+      <section
+        class="relative h-[500px] lg:h-screen flex flex-col items-center justify-center overflow-hidden"
+        id="hero"
+      >
+        <!-- Header (Inside Hero) -->
+        <header
+          class="absolute top-0 lg:top-8 left-0 w-full z-50 bg-transparent"
+        >
+          <div
+            class="flex items-center justify-between px-6 py-4 lg:justify-center"
+          >
+            <!-- Logo -->
+            <div class="text-white text-2xl font-bold lg:hidden"></div>
+
+            <!-- Hamburger Button -->
+            <button id="menu-btn" class="lg:hidden text-white text-3xl">
+              <i class="ri-menu-3-line"></i>
+            </button>
+
+            <!-- Navigation Links -->
+            <nav
+              id="menu"
+              class="hidden lg:flex items-center space-x-8 text-white"
+            >
+              <ul
+                class="flex flex-col lg:flex-row space-y-4 lg:space-y-0 lg:space-x-8 text-center lg:text-left"
+              >
+                <li>
+                  <a
+                    href="#services"
+                    class="font-medium uppercase relative group"
+                  >
+                    AngebotE
+                    <span
+                      class="absolute left-0 bottom-0 w-0 h-0.5 bg-white transition-all duration-300 group-hover:w-full"
+                    ></span>
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="#companies"
+                    class="font-medium uppercase relative group"
+                  >
+                    Reedereien
+                    <span
+                      class="absolute left-0 bottom-0 w-0 h-0.5 bg-white transition-all duration-300 group-hover:w-full"
+                    ></span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#about" class="font-medium uppercase relative group">
+                    Über Uns
+                    <span
+                      class="absolute left-0 bottom-0 w-0 h-0.5 bg-white transition-all duration-300 group-hover:w-full"
+                    ></span>
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="#consultation"
+                    class="font-medium uppercase relative group"
+                  >
+                    Kontakt
+                    <span
+                      class="absolute left-0 bottom-0 w-0 h-0.5 bg-white transition-all duration-300 group-hover:w-full"
+                    ></span>
+                  </a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+
+          <!-- Mobile Menu -->
+          <div
+            id="mobile-menu"
+            class="hidden fixed inset-0 bg-black bg-opacity-90 z-50 flex flex-col items-center justify-center text-white text-2xl space-y-6"
+          >
+            <button id="close-menu" class="absolute top-6 right-6 text-4xl">
+              <i class="ri-close-line"></i>
+            </button>
+            <a href="#services" class="uppercase">AngebotE</a>
+            <a href="#companies" class="uppercase">Reedereien</a>
+            <a href="#about" class="uppercase">Über Uns</a>
+            <a href="#consultation" class="uppercase">Kontakt</a>
+          </div>
+        </header>
+
+        <!-- Background Image -->
+        <div class="absolute inset-0 w-full h-full">
+          <img
+            id="bgImage"
+            src="./img/hero.png"
+            alt="hero"
+            class="w-full h-full object-cover"
+          />
+        </div>
+
+        <!-- Title (Parallax Effect) -->
+        <div
+          class="relative w-full flex flex-col items-center justify-center z-10 xl:-top-24 2xl:-top-36"
+        >
+          <h1
+            id="parallaxText"
+            class="uppercase text-4xl md:text-6xl lg:text-7xl xl:text-8xl 2xl:text-[150px] font-normal text-center text-white"
+          >
+            Polar Dreams
+          </h1>
+        </div>
+
+        <!-- Foreground Image -->
+        <div
+          class="absolute bottom-0 lg:-bottom-10 xl:-bottom-10 w-full z-20 foreground-image hidden xl:block"
+        >
+          <img
+            id="fgImage"
+            src="./img/hero-image-tip.png"
+            alt="foreground"
+            class="w-full object-center object-cover"
+          />
+        </div>
+      </section>
+
+      <!-- hero end -->
+      <!-- about start -->
+      <section class="py-10 lg:py-20" id="about">
+        <div class="w-full lg:max-w-[1200px] mx-auto px-4">
+          <h2
+            class="font-acumin text-3xl lg:text-[40px] text-black pb-6 lg:pb-9 font-medium"
+          >
+            Über uns
+          </h2>
+          <div
+            class="flex flex-col lg:flex-row items-start justify-between gap-5 lg:gap-6"
+          >
+            <div class="w-full lg:w-1/3 order-2 lg:order-1">
+              <h3
+                class="font-acumin text-xl lg:text-2xl text-black font-medium"
+              >
+                Expeditionen vom Spezialisten
+              </h3>
+              <p
+                class="lg:text-lg text-[#333333] pt-3 pb-6 lg:pt-4 lg:pb-6 font-light"
+              >
+                PolarDreams ist Ihre erste Adresse für Expeditionsreisen in die
+                entlegensten Regionen unserer Erde – die Arktis und Antarktis.
+                Als Spezialist innerhalb von Glur Reisen verfügen wir über
+                langjährige Erfahrung und tiefgreifendes Know-how in der
+                Organisation hochwertiger Expeditions-Seereisen.
+              </p>
+              <a
+                href="#"
+                class="font-acumin px-[40px] py-4 bg-black text-white rounded-full inline-block border-2 border-black hover:bg-white hover:text-black font-medium"
+                >Mehr Infos</a
+              >
+            </div>
+            <div class="w-full lg:w-2/3 order-1 lg:order-2">
+              <div>
+                <img src="./img/about.png" alt="about" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- about end -->
+      <!-- services start -->
+      <section class="py-10 lg:py-20" id="services">
+        <div class="w-full lg:max-w-[1200px] mx-auto px-4">
+          <div
+            class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 md:gap-6"
+          >
+            <!-- services 1 -->
+            <div
+              class="bg-white py-[65px] px-[40px] shadow-sm flex flex-col justify-content-center items-center text-center hover:shadow-xl"
+            >
+              <div><img src="./img/ship.svg" alt="shipping" /></div>
+              <h3
+                class="font-acumin text-xl lg:text-2xl text-black pt-6 pb-4 font-medium"
+              >
+                Kleine Schiffe - grosse Erlebnisse
+              </h3>
+              <p class="lg:text-lg text-[#333333]">
+                Persönliche Atmosphäre statt Massentourismus – für intensivere
+                Naturerlebnisse.
+              </p>
+            </div>
+            <!-- services 2 -->
+            <div
+              class="bg-white py-[65px] px-[40px] shadow-sm flex flex-col justify-content-center items-center text-center hover:shadow-xl"
+            >
+              <div><img src="./img/user.svg" alt="user" /></div>
+              <h3
+                class="font-acumin text-xl lg:text-2xl text-black pt-6 pb-4 font-medium"
+              >
+                Fachkundige Reiseleitung
+              </h3>
+              <p class="lg:text-lg text-[#333333]">
+                Erfahrene Lektoren vermitteln Wissen mit Leidenschaft.
+              </p>
+            </div>
+            <!-- services 3 -->
+            <div
+              class="bg-white py-[65px] px-[40px] shadow-sm flex flex-col justify-content-center items-center text-center hover:shadow-xl"
+            >
+              <div><img src="./img/anchor.svg" alt="anchor" /></div>
+              <h3
+                class="font-acumin text-xl lg:text-2xl text-black pt-6 pb-4 font-medium"
+              >
+                Tägliche Landgänge
+              </h3>
+              <p class="lg:text-lg text-[#333333]">
+                Natur hautnah entdecken – wann immer möglich, gehen wir an Land.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- services end -->
+      <!-- trips start -->
+      <section class="py-10 lg:py-20" id="trips">
+        <div class="w-full lg:max-w-[1200px] mx-auto px-4">
+          <h2
+            class="font-acumin text-3xl lg:text-[40px] text-black pb-6 lg:pb-9 font-medium"
+          >
+            Aktuelle Reisen
+          </h2>
+          <div
+            class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-5 md:gap-6"
+          >
+            <!-- trip 1 -->
+            <div class="w-full relative text-center">
+              <img class="w-full" src="./img/trip-01.png" alt="trip" />
+
+              <!-- Overlay Content -->
+              <a
+                href="#"
+                class="absolute inset-x-6 bottom-6 lg:inset-x-12 lg:bottom-12 bg-white p-6 cursor-pointer group"
+              >
+                <div class="flex justify-between items-center">
+                  <h3 class="text-xl lg:text-2xl text-black font-medium">
+                    Reise Name
+                  </h3>
+                  <div
+                    class="transform transition-transform duration-300 group-hover:-translate-x-2"
+                  >
+                    <img src="./img/arrow.svg" alt="arrow" />
+                  </div>
+                </div>
+                <h4 class="text-black text-start pt-1 pb-3 font-medium">
+                  CHF 1500.— <span class="font-light">pro Person</span>
+                </h4>
+                <p class="text-black text-start">
+                  Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                  laboris nisi ut aliquip ex ea commodo consequat. Excepteur
+                  sint occaecat cupidatat non proident.
+                </p>
+              </a>
+            </div>
+            <!-- trip 2 -->
+            <div class="w-full relative text-center">
+              <img class="w-full" src="./img/trip-02.png" alt="trip" />
+
+              <!-- Overlay Content -->
+              <a
+                href="#"
+                class="absolute inset-x-6 bottom-6 lg:inset-x-12 lg:bottom-12 bg-white p-6 cursor-pointer group"
+              >
+                <div class="flex justify-between items-center">
+                  <h3 class="text-xl lg:text-2xl text-black font-medium">
+                    Reise Name
+                  </h3>
+                  <div
+                    class="transform transition-transform duration-300 group-hover:-translate-x-2"
+                  >
+                    <img src="./img/arrow.svg" alt="arrow" />
+                  </div>
+                </div>
+                <h4 class="text-black text-start pt-1 pb-3 font-medium">
+                  CHF 1500.— <span class="font-light">pro Person</span>
+                </h4>
+                <p class="text-black text-start">
+                  Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                  laboris nisi ut aliquip ex ea commodo consequat. Excepteur
+                  sint occaecat cupidatat non proident.
+                </p>
+              </a>
+            </div>
+            <!-- trip 3 -->
+            <div class="w-full relative text-center">
+              <img class="w-full" src="./img/trip-03.png" alt="trip" />
+
+              <!-- Overlay Content -->
+              <a
+                href="#"
+                class="absolute inset-x-6 bottom-6 lg:inset-x-12 lg:bottom-12 bg-white p-6 cursor-pointer group"
+              >
+                <div class="flex justify-between items-center">
+                  <h3 class="text-xl lg:text-2xl text-black font-medium">
+                    Reise Name
+                  </h3>
+                  <div
+                    class="transform transition-transform duration-300 group-hover:-translate-x-2"
+                  >
+                    <img src="./img/arrow.svg" alt="arrow" />
+                  </div>
+                </div>
+                <h4 class="text-black text-start pt-1 pb-3 font-medium">
+                  CHF 1500.— <span class="font-light">pro Person</span>
+                </h4>
+                <p class="text-black text-start">
+                  Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                  laboris nisi ut aliquip ex ea commodo consequat. Excepteur
+                  sint occaecat cupidatat non proident.
+                </p>
+              </a>
+            </div>
+            <!-- trip 4 -->
+            <div class="w-full relative text-center">
+              <img class="w-full" src="./img/trip-04.png" alt="trip" />
+
+              <!-- Overlay Content -->
+              <a
+                href="#"
+                class="absolute inset-x-6 bottom-6 lg:inset-x-12 lg:bottom-12 bg-white p-6 cursor-pointer group"
+              >
+                <div class="flex justify-between items-center">
+                  <h3 class="text-xl lg:text-2xl text-black font-medium">
+                    Reise Name
+                  </h3>
+                  <div
+                    class="transform transition-transform duration-300 group-hover:-translate-x-2"
+                  >
+                    <img src="./img/arrow.svg" alt="arrow" />
+                  </div>
+                </div>
+                <h4 class="text-black text-start pt-1 pb-3 font-medium">
+                  CHF 1500.— <span class="font-light">pro Person</span>
+                </h4>
+                <p class="text-black text-start">
+                  Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                  laboris nisi ut aliquip ex ea commodo consequat. Excepteur
+                  sint occaecat cupidatat non proident.
+                </p>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- trips end -->
+      <!-- adventure start -->
+      <section class="py-10 lg:py-20" id="adventure">
+        <div
+          class="w-full lg:max-w-[1200px] mx-auto px-4 bg-white py-20 shadow-lg"
+        >
+          <div
+            class="max-w-[432px] mx-auto flex justify-center items-center flex-col text-center"
+          >
+            <h2
+              class="font-acumin text-2xl lg:text-[32px] text-black font-medium"
+            >
+              Bereit fürs Abenteuer?
+            </h2>
+            <p class="lg:text-lg text-[#333333] pt-5 pb-6">
+              Lassen Sie sich von unseren Polar-Experten individuell beraten –
+              persönlich, unverbindlich und mit viel Know-how. Wir freuen uns
+              auf Ihre Kontaktaufnahme.
+            </p>
+            <a
+              href="#"
+              class="font-acumin px-[40px] py-4 bg-black text-white rounded-full inline-block border-2 border-black hover:bg-white hover:text-black font-medium"
+              >Kontakt aufnehmen</a
+            >
+          </div>
+        </div>
+      </section>
+      <!-- adventure end -->
+      <!-- companies start -->
+      <section class="py-10 lg:py-20" id="companies">
+        <div class="w-full lg:max-w-[1200px] mx-auto px-4">
+          <h2
+            class="font-acumin text-3xl lg:text-[40px] text-black pb-6 lg:pb-9 font-medium"
+          >
+            Unsere Partner-Reedereien
+          </h2>
+          <div
+            class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 md:gap-6"
+          >
+            <!-- partner info -->
+            <div>
+              <p
+                class="text-black text-start lg:text-lg font-light pb-5 lg:pb-6"
+              >
+                Wir arbeiten ausschliesslich mit renommierten Reedereien
+                zusammen, die sich auf Expeditionen in die Arktis und Antarktis
+                spezialisiert haben. Alle Schiffe bieten höchste
+                Sicherheitsstandards, kleine Passagierkapazitäten und echte
+                Expeditions-Erfahrung.
+              </p>
+              <a
+                href="#"
+                class="font-acumin px-[40px] py-4 bg-black text-white rounded-full inline-block border-2 border-black hover:bg-white hover:text-black font-medium"
+                >Mehr Infos</a
+              >
+            </div>
+            <!-- partner 1 -->
+            <div class="w-full relative text-center">
+              <img class="w-full" src="./img/reederei-01.png" alt="reederei" />
+
+              <!-- Overlay Content -->
+              <div class="absolute inset-x-6 bottom-6">
+                <a
+                  href="#"
+                  class="font-acumin px-[40px] py-4 bg-white text-black rounded-full inline-block border-2 border-white hover:bg-black/60 hover:text-white font-medium w-full"
+                  >Reederei 1</a
+                >
+              </div>
+            </div>
+            <!-- partner 2 -->
+            <div class="w-full relative text-center">
+              <img class="w-full" src="./img/reederei-02.png" alt="reederei" />
+
+              <!-- Overlay Content -->
+              <div class="absolute inset-x-6 bottom-6">
+                <a
+                  href="#"
+                  class="font-acumin px-[40px] py-4 bg-white text-black rounded-full inline-block border-2 border-white hover:bg-black/60 hover:text-white font-medium w-full"
+                  >Reederei 2</a
+                >
+              </div>
+            </div>
+            <!-- partner 3 -->
+            <div class="w-full relative text-center">
+              <img class="w-full" src="./img/reederei-03.png" alt="reederei" />
+
+              <!-- Overlay Content -->
+              <div class="absolute inset-x-6 bottom-6">
+                <a
+                  href="#"
+                  class="font-acumin px-[40px] py-4 bg-white text-black rounded-full inline-block border-2 border-white hover:bg-black/60 hover:text-white font-medium w-full"
+                  >Reederei 3</a
+                >
+              </div>
+            </div>
+            <!-- partner 4 -->
+            <div class="w-full relative text-center">
+              <img class="w-full" src="./img/reederei-04.png" alt="reederei" />
+
+              <!-- Overlay Content -->
+              <div class="absolute inset-x-6 bottom-6">
+                <a
+                  href="#"
+                  class="font-acumin px-[40px] py-4 bg-white text-black rounded-full inline-block border-2 border-white hover:bg-black/60 hover:text-white font-medium w-full"
+                  >Reederei 4</a
+                >
+              </div>
+            </div>
+            <!-- partner 5 -->
+            <div class="w-full relative text-center">
+              <img class="w-full" src="./img/reederei-05.png" alt="reederei" />
+
+              <!-- Overlay Content -->
+              <div class="absolute inset-x-6 bottom-6">
+                <a
+                  href="#"
+                  class="font-acumin px-[40px] py-4 bg-white text-black rounded-full inline-block border-2 border-white hover:bg-black/60 hover:text-white font-medium w-full"
+                  >Reederei 5</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- companies end -->
+      <!-- faq start -->
+      <section class="py-10 lg:py-20" id="faq">
+        <div class="w-full lg:max-w-[1200px] mx-auto px-4">
+          <h2
+            class="font-acumin text-3xl lg:text-[40px] text-black pb-6 lg:pb-9 font-medium"
+          >
+            FAQS
+          </h2>
+          <div
+            class="flex flex-col lg:flex-row items-start justify-between gap-5 lg:gap-6"
+          >
+            <div class="w-full lg:w-1/3">
+              <h3
+                class="font-acumin text-xl lg:text-2xl text-black font-medium"
+              >
+                Culpa qui officia deserunt
+              </h3>
+              <p
+                class="lg:text-lg text-[#333333] pt-3 pb-6 lg:pt-4 lg:pb-6 font-light"
+              >
+                Duis aute irure dolor in reprehenderit in voluptate velit esse
+                cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+                cupidatat non proident, sunt in culpa qui officia deserunt
+                mollit anim id est laborum.
+              </p>
+              <a
+                href="#"
+                class="font-acumin px-[40px] py-4 bg-black text-white rounded-full inline-block border-2 border-black hover:bg-white hover:text-black font-medium"
+                >Mehr Infos</a
+              >
+            </div>
+            <div class="w-full lg:w-2/3">
+              <!-- part -->
+              <div class="flex justify-center items-center flex-col space-y-4">
+                <!-- FAQ Items 1 -->
+                <div class="faq-item w-full bg-white p-6 cursor-pointer">
+                  <div
+                    class="w-full flex items-center justify-between"
+                    onclick="toggleFAQ(this)"
+                  >
+                    <h3 class="font-medium text-black">
+                      Maecenas nec odio et ante tincidunt tempus?
+                    </h3>
+                    <img
+                      src="./img/arrow-down.svg"
+                      alt="arrow"
+                      class="faq-arrow transition-transform duration-300"
+                    />
+                  </div>
+                  <p class="faq-answer text-[#333333] pt-4 font-light hidden">
+                    Duis aute irure dolor in reprehenderit in voluptate velit
+                    esse cillum dolore eu fugiat nulla pariatur.
+                  </p>
+                </div>
+                <!-- FAQ Items 2 -->
+                <div class="faq-item w-full bg-white p-6 cursor-pointer">
+                  <div
+                    class="w-full flex items-center justify-between"
+                    onclick="toggleFAQ(this)"
+                  >
+                    <h3 class="font-medium text-black">
+                      Etiam ultricies nisi vel augue curabitur ullamcorper
+                      ultricies nisi?
+                    </h3>
+                    <img
+                      src="./img/arrow-down.svg"
+                      alt="arrow"
+                      class="faq-arrow transition-transform duration-300"
+                    />
+                  </div>
+                  <p class="faq-answer text-[#333333] pt-4 font-light hidden">
+                    Excepteur sint occaecat cupidatat non proident, sunt in
+                    culpa qui officia deserunt mollit anim id est laborum.
+                  </p>
+                </div>
+                <!-- FAQ Items 3 -->
+                <div class="faq-item w-full bg-white p-6 cursor-pointer">
+                  <div
+                    class="w-full flex items-center justify-between"
+                    onclick="toggleFAQ(this)"
+                  >
+                    <h3 class="font-medium text-black">
+                      Sed consequat leo eget bibendum sodales augue velit cursus
+                      nunc?
+                    </h3>
+                    <img
+                      src="./img/arrow-down.svg"
+                      alt="arrow"
+                      class="faq-arrow transition-transform duration-300"
+                    />
+                  </div>
+                  <p class="faq-answer text-[#333333] pt-4 font-light hidden">
+                    Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut
+                    odit aut fugit.
+                  </p>
+                </div>
+                <!-- FAQ Items 4 -->
+                <div class="faq-item w-full bg-white p-6 cursor-pointer">
+                  <div
+                    class="w-full flex items-center justify-between"
+                    onclick="toggleFAQ(this)"
+                  >
+                    <h3 class="font-medium text-black">
+                      Maecenas tempus tellus eget condimentum rhoncus sem quam
+                      semper libero?
+                    </h3>
+                    <img
+                      src="./img/arrow-down.svg"
+                      alt="arrow"
+                      class="faq-arrow transition-transform duration-300"
+                    />
+                  </div>
+                  <p class="faq-answer text-[#333333] pt-4 font-light hidden">
+                    Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut
+                    odit aut fugit.
+                  </p>
+                </div>
+                <!-- FAQ Items 5 -->
+                <div class="faq-item w-full bg-white p-6 cursor-pointer">
+                  <div
+                    class="w-full flex items-center justify-between"
+                    onclick="toggleFAQ(this)"
+                  >
+                    <h3 class="font-medium text-black">
+                      Maecenas nec odio et ante tincidunt tempus?
+                    </h3>
+                    <img
+                      src="./img/arrow-down.svg"
+                      alt="arrow"
+                      class="faq-arrow transition-transform duration-300"
+                    />
+                  </div>
+                  <p class="faq-answer text-[#333333] pt-4 font-light hidden">
+                    Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut
+                    odit aut fugit.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- faq end -->
+      <!-- impressions start -->
+      <section class="py-10 lg:py-20" id="impressions">
+        <div class="w-full lg:max-w-[1200px] mx-auto px-4">
+          <h2
+            class="font-acumin text-3xl lg:text-[40px] text-black pb-6 lg:pb-9 font-medium"
+          >
+            Impressionen
+          </h2>
+          <!-- Lightbox Container (Hidden Initially) -->
+          <!-- Lightbox Container (Ensuring High Z-Index) -->
+          <div
+            id="lightbox"
+            class="fixed inset-0 bg-black bg-opacity-80 flex justify-center items-center hidden z-[9999]"
+          >
+            <img id="lightbox-img" class="max-w-full max-h-full" />
+            <button
+              onclick="closeLightbox()"
+              class="absolute top-4 right-4 text-white text-2xl"
+            >
+              &times;
+            </button>
+          </div>
+
+          <!-- Masonry Grid -->
+          <div class="grid grid-cols-12 gap-4">
+            <!-- Image 1 -->
+            <a
+              href="./img/gallery-01.png"
+              data-fancybox="gallery"
+              class="relative group col-span-12 sm:col-span-6 lg:col-span-4"
+            >
+              <img
+                src="./img/gallery-01.png"
+                class="w-full h-auto object-cover"
+              />
+              <div
+                class="absolute inset-0 bg-black/60 flex justify-center items-center opacity-0 group-hover:opacity-100 transition duration-300"
+              >
+                <img src="./img/zoom.svg" class="w-10 h-10" />
+              </div>
+            </a>
+
+            <!-- Image 2 -->
+            <a
+              href="./img/gallery-02.png"
+              data-fancybox="gallery"
+              class="relative group col-span-12 sm:col-span-6 lg:col-span-4 lg:col-start-5"
+            >
+              <img
+                src="./img/gallery-02.png"
+                class="w-full h-auto object-cover"
+              />
+              <div
+                class="absolute inset-0 bg-black/60 flex justify-center items-center opacity-0 group-hover:opacity-100 transition duration-300"
+              >
+                <img src="./img/zoom.svg" class="w-10 h-10" />
+              </div>
+            </a>
+
+            <!-- Image 3 -->
+            <a
+              href="./img/gallery-03.png"
+              data-fancybox="gallery"
+              class="relative group col-span-12 sm:col-span-6 lg:col-span-4 lg:col-start-9"
+            >
+              <img
+                src="./img/gallery-03.png"
+                class="w-full h-auto object-cover"
+              />
+              <div
+                class="absolute inset-0 bg-black/60 flex justify-center items-center opacity-0 group-hover:opacity-100 transition duration-300"
+              >
+                <img src="./img/zoom.svg" class="w-10 h-10" />
+              </div>
+            </a>
+
+            <!-- Image 4 -->
+            <a
+              href="./img/gallery-04.png"
+              data-fancybox="gallery"
+              class="relative group col-span-12 sm:col-span-6 sm:row-span-1 md:col-span-6 row-span-2 md:row-span-2 lg:row-span-4"
+            >
+              <img
+                src="./img/gallery-04.png"
+                class="w-full h-auto object-cover"
+              />
+              <div
+                class="absolute inset-0 bg-black/60 flex justify-center items-center opacity-0 group-hover:opacity-100 transition duration-300"
+              >
+                <img src="./img/zoom.svg" class="w-10 h-10" />
+              </div>
+            </a>
+
+            <!-- Image 5 -->
+            <a
+              href="./img/gallery-05.png"
+              data-fancybox="gallery"
+              class="relative group col-span-12 sm:col-span-6 md:col-span-6 lg:col-start-7 row-span-2"
+            >
+              <img
+                src="./img/gallery-05.png"
+                class="w-full h-auto object-cover"
+              />
+              <div
+                class="absolute inset-0 bg-black/60 flex justify-center items-center opacity-0 group-hover:opacity-100 transition duration-300"
+              >
+                <img src="./img/zoom.svg" class="w-10 h-10" />
+              </div>
+            </a>
+
+            <!-- Image 6 -->
+            <a
+              href="./img/gallery-06.png"
+              data-fancybox="gallery"
+              class="relative group col-span-12 sm:col-span-6 md:col-span-6 lg:col-start-7 row-span-2"
+            >
+              <img
+                src="./img/gallery-06.png"
+                class="w-full h-auto object-cover"
+              />
+              <div
+                class="absolute inset-0 bg-black/60 flex justify-center items-center opacity-0 group-hover:opacity-100 transition duration-300"
+              >
+                <img src="./img/zoom.svg" class="w-10 h-10" />
+              </div>
+            </a>
+
+            <!-- Image 7 -->
+            <a
+              href="./img/gallery-07.png"
+              data-fancybox="gallery"
+              class="relative group col-span-12 row-span-3"
+            >
+              <img
+                src="./img/gallery-07.png"
+                class="w-full h-auto object-cover"
+              />
+              <div
+                class="absolute inset-0 bg-black/60 flex justify-center items-center opacity-0 group-hover:opacity-100 transition duration-300"
+              >
+                <img src="./img/zoom.svg" class="w-10 h-10" />
+              </div>
+            </a>
+
+            <!-- Image 8 -->
+            <a
+              href="./img/gallery-05.png"
+              data-fancybox="gallery"
+              class="relative group col-span-12 sm:col-span-6 row-span-2"
+            >
+              <img
+                src="./img/gallery-05.png"
+                class="w-full h-auto object-cover"
+              />
+              <div
+                class="absolute inset-0 bg-black/60 flex justify-center items-center opacity-0 group-hover:opacity-100 transition duration-300"
+              >
+                <img src="./img/zoom.svg" class="w-10 h-10" />
+              </div>
+            </a>
+
+            <!-- Image 9 -->
+            <a
+              href="./img/gallery-06.png"
+              data-fancybox="gallery"
+              class="relative group col-span-12 sm:col-span-6 lg:col-start-7 row-span-2"
+            >
+              <img
+                src="./img/gallery-06.png"
+                class="w-full h-auto object-cover"
+              />
+              <div
+                class="absolute inset-0 bg-black/60 flex justify-center items-center opacity-0 group-hover:opacity-100 transition duration-300"
+              >
+                <img src="./img/zoom.svg" class="w-10 h-10" />
+              </div>
+            </a>
+          </div>
+        </div>
+      </section>
+      <!-- impressions end -->
+      <!-- consultation start -->
+      <section class="py-10 lg:py-20" id="consultation">
+        <div
+          class="w-full lg:max-w-[1200px] mx-auto px-4 bg-white py-20 shadow-lg"
+        >
+          <div
+            class="max-w-[432px] mx-auto flex justify-center items-center flex-col text-center"
+          >
+            <h2
+              class="font-acumin text-2xl lg:text-[32px] text-black font-medium"
+            >
+              Kostenlose Beratung
+            </h2>
+            <p class="lg:text-lg text-[#333333] pt-5 pb-6">
+              Planen Sie Ihre Traumexpedition gemeinsam mit unseren Spezialisten
+              – persönlich, unverbindlich und kompetent.
+            </p>
+            <a
+              href="#"
+              class="font-acumin px-[40px] py-4 bg-black text-white rounded-full inline-block border-2 border-black hover:bg-white hover:text-black font-medium"
+              >Jetzt Termin vereinbaren</a
+            >
+          </div>
+        </div>
+      </section>
+      <!-- consultation end -->
+    </main>
+    <!-- main end -->
+    <!-- footer start -->
+    <footer class="py-10 lg:py-20">
+      <div class="w-full lg:max-w-[1200px] mx-auto px-4 py-10">
+        <div class="flex items-center justify-center flex-col">
+          <h2 class="font-acumin text-xl lg:text-2xl text-black font-medium">
+            Folgen Sie uns
+          </h2>
+          <ul class="flex items-center justify-center space-x-4 pt-6">
+            <li>
+              <a
+                href="#"
+                class="w-10 h-10 lg:w-16 lg:h-16 flex items-center justify-center rounded-full bg-black text-white text-2xl lg:text-4xl border-[2px] border-black hover:bg-white hover:text-black"
+              >
+                <i class="ri-youtube-fill"></i>
+              </a>
+            </li>
+            <li>
+              <a
+                href="#"
+                class="w-10 h-10 lg:w-16 lg:h-16 flex items-center justify-center rounded-full bg-black text-white text-2xl lg:text-4xl border-[2px] border-black hover:bg-white hover:text-black"
+              >
+                <i class="ri-facebook-circle-fill"></i>
+              </a>
+            </li>
+            <li>
+              <a
+                href="#"
+                class="w-10 h-10 lg:w-16 lg:h-16 flex items-center justify-center rounded-full bg-black text-white text-2xl lg:text-4xl border-[2px] border-black hover:bg-white hover:text-black"
+              >
+                <i class="ri-instagram-line"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+    <!-- footer end -->
+    <!-- Scroll to Top Button -->
+    <button
+      id="scrollToTopBtn"
+      class="w-10 h-10 lg:w-12 lg:h-12 flex justify-center items-center fixed bottom-6 right-6 bg-black text-white p-3 rounded-full shadow-lg opacity-0 transition-opacity duration-300"
+    >
+      <i class="ri-arrow-up-line text-xl lg:text-2xl"></i>
+    </button>
+
+    <!-- js -->
+    <!-- Fancybox JS -->
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.umd.js"></script>
+    <script>
+      function toggleFAQ(faqItem) {
+        const answer = faqItem.nextElementSibling;
+        const arrow = faqItem.querySelector(".faq-arrow");
+
+        answer.classList.toggle("hidden");
+        arrow.classList.toggle("rotate-180");
+      }
+
+      //lightbox
+      Fancybox.bind("[data-fancybox]", {
+        Toolbar: {
+          display: ["zoom", "close"],
+        },
+        zoom: true,
+        wheel: "zoom",
+        Thumbs: false,
+        Image: {
+          zoom: true,
+          click: "toggleZoom",
+          wheel: "zoom",
+          fit: "contain",
+        },
+      });
+      // peralax
+      window.addEventListener("scroll", function () {
+        const text = document.getElementById("parallaxText");
+        let scrollY = window.scrollY;
+
+        // Apply parallax only for screens 1440px and above
+        if (window.innerWidth >= 1180) {
+          text.style.transform = `translateY(${scrollY * 0.3}px)`;
+        } else {
+          text.style.transform = "translateY(0)"; // Reset position for smaller screens
+        }
+      });
+
+      // Smooth scrolling
+      document.querySelectorAll("a.nav-link").forEach((anchor) => {
+        anchor.addEventListener("click", function (e) {
+          e.preventDefault();
+
+          const targetId = this.getAttribute("href").substring(1);
+          const targetElement = document.getElementById(targetId);
+
+          if (targetElement) {
+            window.scrollTo({
+              top: targetElement.offsetTop - 50, // Adjust for fixed header if needed
+              behavior: "smooth",
+            });
+          }
+        });
+      });
+
+      //  scroll to top
+      const scrollToTopBtn = document.getElementById("scrollToTopBtn");
+
+      // Show/hide button based on scroll position
+      window.addEventListener("scroll", () => {
+        if (window.scrollY > 300) {
+          scrollToTopBtn.classList.remove("opacity-0");
+          scrollToTopBtn.classList.add("opacity-100");
+        } else {
+          scrollToTopBtn.classList.remove("opacity-100");
+          scrollToTopBtn.classList.add("opacity-0");
+        }
+      });
+
+      // Scroll to top smoothly when clicked
+      scrollToTopBtn.addEventListener("click", () => {
+        window.scrollTo({
+          top: 0,
+          behavior: "smooth",
+        });
+      });
+      // menu
+      const menuBtn = document.getElementById("menu-btn");
+      const mobileMenu = document.getElementById("mobile-menu");
+      const closeMenu = document.getElementById("close-menu");
+
+      menuBtn.addEventListener("click", () => {
+        mobileMenu.classList.remove("hidden");
+      });
+
+      closeMenu.addEventListener("click", () => {
+        mobileMenu.classList.add("hidden");
+      });
+      // snap
+      document.addEventListener("DOMContentLoaded", function () {
+        function adjustForegroundPosition() {
+          const bgImage = document.getElementById("bgImage");
+          const fgImage = document.getElementById("fgImage");
+          const parallaxText = document.getElementById("parallaxText");
+
+          if (bgImage && fgImage && parallaxText) {
+            const bgRect = bgImage.getBoundingClientRect();
+            fgImage.style.bottom = `-${bgRect.height * 0.05}px`; // Adjust foreground position dynamically
+
+            // Adjust font size dynamically for 1180px screens
+            if (window.innerWidth <= 1180) {
+              parallaxText.style.fontSize = "4rem";
+            } else {
+              parallaxText.style.fontSize = ""; // Reset for larger screens
+            }
+          }
+        }
+
+        // Run on page load & window resize
+        window.addEventListener("resize", adjustForegroundPosition);
+        adjustForegroundPosition();
+      });
+    </script>
+  </body>
+</html>
